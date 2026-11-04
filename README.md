@@ -25,6 +25,13 @@ A reusable GitHub Action demonstrating action inputs, outputs, Node.js packaging
 - name: Show output
   run: echo Generated at ${{ steps.greeting.outputs.time }}
 
+## Security and privacy
+
+- Runs on the supported Node 20 GitHub Actions runtime.
+- Reads only the declared greeting input.
+- Does not print the triggering workflow event payload or other repository context to logs.
+- Consumer workflows should use immutable release tags or commit SHAs instead of master.
+
 ## Engineering notes
 
 - Inputs are declared in action.yml.
@@ -36,8 +43,8 @@ A reusable GitHub Action demonstrating action inputs, outputs, Node.js packaging
 
 - Add unit tests for input handling and output formatting.
 - Add CI for linting and tests.
-- Publish immutable release tags instead of consuming master.
+- Publish immutable release tags.
 - Pin third-party actions by commit SHA in consumer workflows.
 - Add semantic versioning and a release guide.
 
-This project supports a DevOps profile by showing practical CI/CD automation, workflow composition, and reusable developer tooling.
+This project supports a DevOps profile by showing practical CI/CD automation, workflow composition, privacy-aware logging, and reusable developer tooling.
