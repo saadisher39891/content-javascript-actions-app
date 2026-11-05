@@ -5,6 +5,13 @@
 
 A reusable GitHub Action demonstrating action inputs, outputs, Node.js packaging, and workflow integration.
 
+## Customer quick view
+
+**Best fit:** engineering teams that want small, reusable automation components inside their CI/CD workflows.
+
+**What a client gets:** repeatable workflow behavior, clean inputs and outputs, privacy-aware logs, and a practical base for versioned internal tooling.
+
+
 ## Inputs
 
 | Name | Required | Default | Description |
